@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    body{
+        position:relative
+             min-height:100%;
+             min-height:100vh;
+    }
+    .row.content {
+        height: 2500px;
+    }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background: linear-gradient(120deg,rgb(98, 3, 252),rgb(242, 2, 250));
+      height: 100%;
+      color:
+    }
+    .sidenav a{
+        color:aliceblue
+    }
+    
+    /* Set black background color, white text and some padding */
+   
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+    .row.content {height:auto}
+    }
+    .sidenav a:hover{
+        background: rgb(66, 66, 180);
+        color:rgb(236, 236, 243);
+    }
+    #sidetaytol{
+        text-shadow: 10px;
+        color:aliceblue;
+        width:100%;
+        padding:10px;
+        border-radius: 10px;
+        border-style: double;
+        margin-top: 5%;
+        border-color: rgb(247, 245, 248);
+    }
+    #drpdwn{
+        color: rgb(226, 234, 241);
+    }
+    #drpdwn:hover{
+        background: antiquewhite;
+        color: rgb(79, 79, 230);
+    }
+    #drpdwn2{
+        background-color: rgb(64, 42, 163);
+        color:blue;
+    }
+    #drpdwn2 :hover{
+        background: rgb(243, 238, 231);
+        color: rgb(32, 32, 177);
+    }
+    #drpdwnbaba :hover{
+      background-color:rgb(127, 127, 129);
+      color:rgb(243, 209, 197)
+    }
+    #drpdwn3{
+      background: grey;
+    }
+    #drpdwn3 :hover{
+      background: rgb(105, 105, 105)
+    }
+    .containerbottom{
+      text-align: center;
+      margin-right: 25px ;
+    }
+    .footer {
+      background: gray;
+      padding: 1px;
+      position:fixed;
+      left:0;
+      bottom:0;
+      width:100%;
+      text-align: left;  
+      margin-top: 25%;
+            
+    }
+    .footer a{
+      color:aliceblue
+    }
+    .footer a:hover{
+      color:rgb(243, 209, 197)
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4 id="sidetaytol"><b>Bogart's Forum <i class="bi bi-chat-heart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-chat-heart" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125ZM8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+      </svg></i></b></h4> 
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#section1"><b>Home</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="#section2"><b>About</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="#section3"><b>Blogs</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="#section3"><b>Contact</b></a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="drpdwn"><b>More</b></a>
+            <ul class="dropdown-menu" id="drpdwn2">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+      </ul><br>
+      
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit"><b>Search</b></button>
+      </form>
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary position-relative btn-sm">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary position-relative btn-sm">
+        Profile
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </button>
+      <br>
+      <br>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>I Love Suplados</h2>
+      <h5><small class="muted">Post by Florita Mananabas, Sep 27, 2015.</small></h5>
+      <h6><span class="badge bg-success">Top Fan</span></h6><br>
+      <img src="Bar1.jpg" height="500"> <hr>
+      <p>Suplados is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><br>
+      
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Reasons to love Suplados</h2>
+      <h5><small class="muted"> Post by Manang Conching, Sep 24, 2015.</small ></h5>
+      <h6><span class="badge bg-success">Critic</span></h6><br>
+      <img src="Bar2.png" height="150"><br><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br><hr>
+      
+      <p><span class="badge bg-success">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="mt10 ride.jpg" class="rounded-circle" height="65" width="65" alt="avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Brando Belles<br><small class="muted fs-6">Sep 29, 2015, 9:12 PM</small></h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+        </div> <hr>
+        <div class="col-sm-2 text-center">
+          <img src="mt072022.jpg" class="rounded-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Cabahug Tintin <br><small class="muted fs-6">Sep 25, 2015, 8:25 PM</small></h4>
+          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br> <hr>
+          <p><span class="badge bg-success">1</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="mt10side.jpg" class="rounded-circle" height="65" width="65" alt="Avatar">
+            </div> 
+            <div class="col-xs-10">
+              <h4>Gregorio Manoy<br><small class="fs-6 muted">Sep 25, 2015, 8:28 PM</small></h4>
+              <p>Me too! WOW!</p>
+              <br>
+              <br>
+              <br>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div><hr>
+  </div>
+</div>
+>
+<section class="meta">
+  <div class="footer">
+    <ul class="nav float-start">
+      <li class="nav-item">
+          
+        <a class="nav-link active" aria-current="page" href="#"><b>Topics</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Related Posts</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Careers</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled"><b>Disabled</b></a>
+      </li>
+          <ul class="nav flex-column">
+            <li class="nav-item dropdown" id="drpdwnbaba">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="drpdwn"><b>More</b></a>
+                <ul class="dropdown-menu" id="drpdwn3">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+           
+        </ul>
+        
+    </ul>
+    <div class="containerbottom" style="float:right">
+      <a href="#"><i class="bi bi-facebook"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg></a>
+      <a href="#"> <i class="bi bi-messenger"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+        <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+      </svg></a>
+      <a href="#"><i class="bi bi-twitter"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </svg></a>
+      <a href="#"><i class="bi bi-twitch"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+        <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+        <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+      </svg></a>
+      <a href="#"><i class="bi bi-youtube"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+      </svg></a>
+      <a href="#"><i class="bi bi-linkedin"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg></a>
+    </div>
+  </div>
+</section> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
